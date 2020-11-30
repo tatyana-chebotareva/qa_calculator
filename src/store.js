@@ -1,5 +1,5 @@
 import { createStore } from "redux";
 
-import calculator from "./ducks/calculator";
+import calculator from "./functionality";
 
-export default createStore( calculator );
+export default createStore(calculator);
