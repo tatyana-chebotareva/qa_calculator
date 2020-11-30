@@ -67,11 +67,12 @@ export class Calculator extends Component {
               color='#ffffff'
               value='÷'
             />
+            {/* fixed with the correct symbol */}
             <CalculatorButton
               backgroundColor='#f5923e'
               callback={() => setOperator(operators.MULTIPLY)}
               color='#ffffff'
-              value='X'
+              value='×'
             />
             <CalculatorButton
               backgroundColor='#f5923e'
@@ -79,18 +80,14 @@ export class Calculator extends Component {
               color='#ffffff'
               value='-'
             />
+            {/*Fixed the button with the right callback (setting add instead of subtract)*/}
             <CalculatorButton
               backgroundColor='#f5923e'
-              callback={() => setOperator(operators.SUBTRACT)}
+              callback={() => setOperator(operators.ADD)}
               color='#ffffff'
               value='+'
             />
-            <CalculatorButton
-              backgroundColor='#f5923e'
-              callback={evaluate}
-              color='#ffffff'
-              value='='
-            />
+            {/* Removing the extra = button fixes the formatting.*/}
             <CalculatorButton
               backgroundColor='#f5923e'
               callback={evaluate}
