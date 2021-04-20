@@ -43,17 +43,17 @@ export class Calculator extends Component {
         <div className='calculator__buttons-wrapper'>
           <section className='calculator__left-buttons'>
             <CalculatorButton
-              backgroundColor='#d6d6d6'
+              backgroundColor='#bfd8bd'
               callback={clear}
               value='AC'
             />
             <CalculatorButton
-              backgroundColor='#d6d6d6'
+              backgroundColor='#bfd8bd'
               callback={toggleNegative}
               value='+/-'
             />
             <CalculatorButton
-              backgroundColor='#d6d6d6'
+              backgroundColor='#bfd8bd'
               callback={percentage}
               value='%'
             />
@@ -62,37 +62,31 @@ export class Calculator extends Component {
           </section>
           <section className='calculator__operator-buttons'>
             <CalculatorButton
-              backgroundColor='#f5923e'
+              backgroundColor='#98c9a3'
               callback={() => setOperator(operators.DIVIDE)}
               color='#ffffff'
               value='÷'
             />
             <CalculatorButton
-              backgroundColor='#f5923e'
+              backgroundColor='#98c9a3'
               callback={() => setOperator(operators.MULTIPLY)}
               color='#ffffff'
-              value='X'
+              value='×'
             />
             <CalculatorButton
-              backgroundColor='#f5923e'
+              backgroundColor='#98c9a3'
               callback={() => setOperator(operators.SUBTRACT)}
               color='#ffffff'
               value='-'
             />
             <CalculatorButton
-              backgroundColor='#f5923e'
-              callback={() => setOperator(operators.SUBTRACT)}
+              backgroundColor='#98c9a3'
+              callback={() => setOperator(operators.ADD)}
               color='#ffffff'
               value='+'
             />
             <CalculatorButton
-              backgroundColor='#f5923e'
-              callback={evaluate}
-              color='#ffffff'
-              value='='
-            />
-            <CalculatorButton
-              backgroundColor='#f5923e'
+              backgroundColor='#6bab90'
               callback={evaluate}
               color='#ffffff'
               value='='
